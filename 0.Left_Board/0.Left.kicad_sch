@@ -1,0 +1,152 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "b0eb1228-6497-48ef-90d3-d7111199443c")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 29.21 21.59)
+		(size 44.45 36.83)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "29d6b8ec-b9bd-4465-9895-4be83dac74b1")
+		(property "Sheetname" "Left_LED"
+			(at 29.21 20.8784 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Left_LED.kicad_sch"
+			(at 29.21 59.0046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "0.Left"
+				(path "/b0eb1228-6497-48ef-90d3-d7111199443c"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 29.21 116.84)
+		(size 45.72 36.83)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "35ad12b5-7cad-4a96-9c80-ca1c399193b9")
+		(property "Sheetname" "Left_Main"
+			(at 29.21 116.1284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Left_Main.kicad_sch"
+			(at 29.21 154.2546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "0.Left"
+				(path "/b0eb1228-6497-48ef-90d3-d7111199443c"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 29.21 68.58)
+		(size 45.72 36.83)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "8ac6e8ef-733b-4a51-be4d-3ac0eb758adf")
+		(property "Sheetname" "Left_Switch"
+			(at 29.21 67.8684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Left_Switch.kicad_sch"
+			(at 29.21 105.9946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "0.Left"
+				(path "/b0eb1228-6497-48ef-90d3-d7111199443c"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

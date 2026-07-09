@@ -1,0 +1,373 @@
+INFO: kbplacer_plugin_action.py:73: Plugin version: 0.16
+INFO: kbplacer_plugin_action.py:74: Python version: '3.11.5 (main, Jan 23 2026, 07:39:48) [MSC v.1944 64 bit (AMD64)]'
+INFO: kbplacer_plugin_action.py:75: KiCad version: 10.0.3 with 4.2.2 msw (phoenix) wxWidgets 3.3.2
+INFO: kbplacer_dialog.py:695: Language: ko
+INFO: kbplacer_plugin_action.py:83: GUI state: {"layout_path": "J:\\Keyboard\\1.Tomak97\\tomak97-left.json", "key_distance": [19.05, 19.05], "key_info": {"annotation_format": "MX{}", "position_option": "Default", "position": {"x": 0.0, "y": 0.0, "orientation": 0.0, "side": "Back"}, "template_path": "", "start_index": 1}, "enable_diode_placement": true, "route_switches_with_diodes": false, "optimize_diodes_orientation": false, "diode_info": {"annotation_format": "D{}", "position_option": "Custom", "position": {"x": -5.825, "y": 8.025, "orientation": 180.0, "side": "Back"}, "template_path": "", "start_index": -1}, "additional_elements": [{"annotation_format": "LED{}", "position_option": "Custom", "position": {"x": 0.0, "y": -5.0, "orientation": 0.0, "side": "Back"}, "template_path": "", "start_index": -1}, {"annotation_format": "C{}", "position_option": "Custom", "position": {"x": 3.5, "y": -2.725, "orientation": 0.0, "side": "Back"}, "template_path": "", "start_index": -1}], "route_rows_and_columns": false, "template_path": "", "generate_outline": false, "outline_delta": 0.0, "layout_offset": null}
+DEBUG: key_placer.py:143: Switches by nets: defaultdict(<class 'list'>, {frozenset({'ROW2', 'COL2'}): ['MX18'], frozenset({'ROW4', 'COL2'}): ['MX32'], frozenset({'COL0', 'ROW0'}): ['MX1'], frozenset({'COL5', 'ROW5'}): ['MX15'], frozenset({'ROW0', 'COL3'}): ['MX4'], frozenset({'ROW1', 'COL3'}): ['MX11'], frozenset({'ROW1', 'COL5'}): ['MX13'], frozenset({'ROW0', 'COL5'}): ['MX6'], frozenset({'ROW4', 'COL5'}): ['MX35'], frozenset({'COL1', 'ROW4'}): ['MX31'], frozenset({'ROW0', 'COL2'}): ['MX3'], frozenset({'COL0', 'ROW4'}): ['MX30'], frozenset({'COL4', 'ROW2'}): ['MX20'], frozenset({'COL2', 'ROW5'}): ['MX38'], frozenset({'ROW0', 'COL1'}): ['MX2'], frozenset({'ROW2', 'COL1'}): ['MX17'], frozenset({'ROW3', 'COL4'}): ['MX27'], frozenset({'ROW3', 'COL3'}): ['MX26'], frozenset({'ROW4', 'COL3'}): ['MX33'], frozenset({'COL1', 'ROW5'}): ['MX37'], frozenset({'COL0', 'ROW5'}): ['MX36'], frozenset({'COL0', 'ROW1'}): ['MX8'], frozenset({'ROW1', 'COL4'}): ['MX12'], frozenset({'ROW3', 'COL2'}): ['MX25'], frozenset({'ROW3', 'COL6'}): ['MX29'], frozenset({'COL3', 'ROW5'}): ['MX39'], frozenset({'ROW2', 'COL6'}): ['MX22'], frozenset({'ROW2', 'COL5'}): ['MX21'], frozenset({'COL0', 'ROW2'}): ['MX16'], frozenset({'ROW0', 'COL6'}): ['MX7'], frozenset({'COL4', 'ROW5'}): ['MX40'], frozenset({'ROW2', 'COL3'}): ['MX19'], frozenset({'ROW1', 'COL6'}): ['MX14'], frozenset({'COL4', 'ROW4'}): ['MX34'], frozenset({'ROW1', 'COL1'}): ['MX9'], frozenset({'ROW1', 'COL2'}): ['MX10'], frozenset({'ROW0', 'COL4'}): ['MX5'], frozenset({'ROW3', 'COL5'}): ['MX28'], frozenset({'COL0', 'ROW3'}): ['MX23'], frozenset({'ROW3', 'COL1'}): ['MX24']})
+DEBUG: key_placer.py:147: Diodes by switch: {'MX10': ['D10'], 'MX11': ['D11'], 'MX30': ['D30'], 'MX21': ['D21'], 'MX40': ['D40'], 'MX38': ['D38'], 'MX3': ['D3'], 'MX7': ['D7'], 'MX33': ['D33'], 'MX34': ['D34'], 'MX12': ['D12'], 'MX16': ['D16'], 'MX24': ['D24'], 'MX39': ['D39'], 'MX36': ['D36'], 'MX8': ['D8'], 'MX5': ['D5'], 'MX23': ['D23'], 'MX28': ['D28'], 'MX27': ['D27'], 'MX6': ['D6'], 'MX37': ['D37'], 'MX4': ['D4'], 'MX31': ['D31'], 'MX2': ['D2'], 'MX29': ['D29'], 'MX1': ['D1'], 'MX32': ['D32'], 'MX22': ['D22'], 'MX25': ['D25'], 'MX14': ['D14'], 'MX13': ['D13'], 'MX17': ['D17'], 'MX26': ['D26'], 'MX15': ['D15'], 'MX20': ['D20'], 'MX9': ['D9'], 'MX19': ['D19'], 'MX18': ['D18'], 'MX35': ['D35']}
+INFO: kle_serial.py:1031: User layout: [{'name': 'TOMAK97-LEFT'}, [{'a': 7}, 'ESC', {'x': 0.25}, 'F1', 'F2', 'F3', 'F4', {'x': 0.5}, 'F5', 'F6'], [{'y': 0.25, 'a': 4, 'fa': [0, 0, 0, 0, 0, 0, 1]}, '`\n\n\n\n\n\n~', {'a': 7}, '1', '2', '3', '4', '5', '6', '7'], [{'w': 1.5}, 'TAB', 'Q', 'W', 'E', 'R', 'T', 'Y'], [{'w': 1.75}, 'CAP', 'A', 'S', 'D', 'F', 'G', 'H'], [{'w': 2.25}, 'SHIFT', 'Z', 'X', 'C', 'V', 'B'], [{'w': 1.25}, 'CTL', 'FN', {'w': 1.25}, 'ALT'], [{'y': -0.5, 'x': 4.5, 'w': 2.25}, '2.25', '']]
+DEBUG: key_placer.py:755: Using key 1U distance: (19.05, 19.05) mm
+DEBUG: key_placer.py:773: Layout offset: (28575000, 28575000)
+DEBUG: kle_serial.py:1125: Layout with: x_ortholinear_keys=13, y_ortholinear_keys=7, rotated_keys=0, encoders=0, iso_enters=0 and unrecognized_shape_keys=0
+DEBUG: kle_serial.py:1150: Layout tagged: [<KeyboardTag.ROW_STAGGERED: 2>]
+DEBUG: board_modifier.py:119: Setting MX1 footprint position: (38100000, 38100000)
+DEBUG: board_modifier.py:119: Setting MX2 footprint position: (61912500, 38100000)
+DEBUG: board_modifier.py:119: Setting MX3 footprint position: (80962500, 38100000)
+DEBUG: board_modifier.py:119: Setting MX4 footprint position: (100012500, 38100000)
+DEBUG: board_modifier.py:119: Setting MX5 footprint position: (119062500, 38100000)
+DEBUG: board_modifier.py:119: Setting MX6 footprint position: (147637500, 38100000)
+DEBUG: board_modifier.py:119: Setting MX7 footprint position: (166687500, 38100000)
+DEBUG: board_modifier.py:119: Setting MX8 footprint position: (38100000, 61912500)
+DEBUG: board_modifier.py:119: Setting MX9 footprint position: (57150000, 61912500)
+DEBUG: board_modifier.py:119: Setting MX10 footprint position: (76200000, 61912500)
+DEBUG: board_modifier.py:119: Setting MX11 footprint position: (95250000, 61912500)
+DEBUG: board_modifier.py:119: Setting MX12 footprint position: (114300000, 61912500)
+DEBUG: board_modifier.py:119: Setting MX13 footprint position: (133350000, 61912500)
+DEBUG: board_modifier.py:119: Setting MX14 footprint position: (152400000, 61912500)
+DEBUG: board_modifier.py:119: Setting MX15 footprint position: (171450000, 61912500)
+DEBUG: board_modifier.py:119: Setting MX16 footprint position: (42862500, 80962500)
+DEBUG: board_modifier.py:119: Setting MX17 footprint position: (66675000, 80962500)
+DEBUG: board_modifier.py:119: Setting MX18 footprint position: (85725000, 80962500)
+DEBUG: board_modifier.py:119: Setting MX19 footprint position: (104775000, 80962500)
+DEBUG: board_modifier.py:119: Setting MX20 footprint position: (123825000, 80962500)
+DEBUG: board_modifier.py:119: Setting MX21 footprint position: (142875000, 80962500)
+DEBUG: board_modifier.py:119: Setting MX22 footprint position: (161925000, 80962500)
+DEBUG: board_modifier.py:119: Setting MX23 footprint position: (45243750, 100012500)
+DEBUG: board_modifier.py:119: Setting MX24 footprint position: (71437500, 100012500)
+DEBUG: board_modifier.py:119: Setting MX25 footprint position: (90487500, 100012500)
+DEBUG: board_modifier.py:119: Setting MX26 footprint position: (109537500, 100012500)
+DEBUG: board_modifier.py:119: Setting MX27 footprint position: (128587500, 100012500)
+DEBUG: board_modifier.py:119: Setting MX28 footprint position: (147637500, 100012500)
+DEBUG: board_modifier.py:119: Setting MX29 footprint position: (166687500, 100012500)
+DEBUG: board_modifier.py:119: Setting MX30 footprint position: (50006250, 119062500)
+DEBUG: board_modifier.py:119: Setting MX31 footprint position: (80962500, 119062500)
+DEBUG: board_modifier.py:119: Setting MX32 footprint position: (100012500, 119062500)
+DEBUG: board_modifier.py:119: Setting MX33 footprint position: (119062500, 119062500)
+DEBUG: board_modifier.py:119: Setting MX34 footprint position: (138112500, 119062500)
+DEBUG: board_modifier.py:119: Setting MX35 footprint position: (157162500, 119062500)
+DEBUG: board_modifier.py:119: Setting MX36 footprint position: (40481250, 138112500)
+DEBUG: board_modifier.py:119: Setting MX37 footprint position: (61912500, 138112500)
+DEBUG: board_modifier.py:119: Setting MX38 footprint position: (83343750, 138112500)
+DEBUG: board_modifier.py:119: Setting MX39 footprint position: (135731250, 147637500)
+DEBUG: board_modifier.py:119: Setting MX40 footprint position: (166687500, 147637500)
+INFO: key_placer.py:1173: Diode info: [ElementInfo(annotation_format='D{}', position_option=<PositionOption.CUSTOM: 'Custom'>, position=ElementPosition(x=-5.825, y=8.025, orientation=180.0, side=<Side.BACK: 'Back'>), template_path='', start_index=-1)]
+DEBUG: board_modifier.py:132: Getting MX1 footprint position: (38100000, 38100000)
+DEBUG: board_modifier.py:119: Setting D1 footprint position: (32275000, 46125000)
+DEBUG: board_modifier.py:132: Getting MX2 footprint position: (61912500, 38100000)
+DEBUG: board_modifier.py:119: Setting D2 footprint position: (56087500, 46125000)
+DEBUG: board_modifier.py:132: Getting MX3 footprint position: (80962500, 38100000)
+DEBUG: board_modifier.py:119: Setting D3 footprint position: (75137500, 46125000)
+DEBUG: board_modifier.py:132: Getting MX4 footprint position: (100012500, 38100000)
+DEBUG: board_modifier.py:119: Setting D4 footprint position: (94187500, 46125000)
+DEBUG: board_modifier.py:132: Getting MX5 footprint position: (119062500, 38100000)
+DEBUG: board_modifier.py:119: Setting D5 footprint position: (113237500, 46125000)
+DEBUG: board_modifier.py:132: Getting MX6 footprint position: (147637500, 38100000)
+DEBUG: board_modifier.py:119: Setting D6 footprint position: (141812500, 46125000)
+DEBUG: board_modifier.py:132: Getting MX7 footprint position: (166687500, 38100000)
+DEBUG: board_modifier.py:119: Setting D7 footprint position: (160862500, 46125000)
+DEBUG: board_modifier.py:132: Getting MX8 footprint position: (38100000, 61912500)
+DEBUG: board_modifier.py:119: Setting D8 footprint position: (32275000, 69937500)
+DEBUG: board_modifier.py:132: Getting MX9 footprint position: (57150000, 61912500)
+DEBUG: board_modifier.py:119: Setting D9 footprint position: (51325000, 69937500)
+DEBUG: board_modifier.py:132: Getting MX10 footprint position: (76200000, 61912500)
+DEBUG: board_modifier.py:119: Setting D10 footprint position: (70375000, 69937500)
+DEBUG: board_modifier.py:132: Getting MX11 footprint position: (95250000, 61912500)
+DEBUG: board_modifier.py:119: Setting D11 footprint position: (89425000, 69937500)
+DEBUG: board_modifier.py:132: Getting MX12 footprint position: (114300000, 61912500)
+DEBUG: board_modifier.py:119: Setting D12 footprint position: (108475000, 69937500)
+DEBUG: board_modifier.py:132: Getting MX13 footprint position: (133350000, 61912500)
+DEBUG: board_modifier.py:119: Setting D13 footprint position: (127525000, 69937500)
+DEBUG: board_modifier.py:132: Getting MX14 footprint position: (152400000, 61912500)
+DEBUG: board_modifier.py:119: Setting D14 footprint position: (146575000, 69937500)
+DEBUG: board_modifier.py:132: Getting MX15 footprint position: (171450000, 61912500)
+DEBUG: board_modifier.py:119: Setting D15 footprint position: (165625000, 69937500)
+DEBUG: board_modifier.py:132: Getting MX16 footprint position: (42862500, 80962500)
+DEBUG: board_modifier.py:119: Setting D16 footprint position: (37037500, 88987500)
+DEBUG: board_modifier.py:132: Getting MX17 footprint position: (66675000, 80962500)
+DEBUG: board_modifier.py:119: Setting D17 footprint position: (60850000, 88987500)
+DEBUG: board_modifier.py:132: Getting MX18 footprint position: (85725000, 80962500)
+DEBUG: board_modifier.py:119: Setting D18 footprint position: (79900000, 88987500)
+DEBUG: board_modifier.py:132: Getting MX19 footprint position: (104775000, 80962500)
+DEBUG: board_modifier.py:119: Setting D19 footprint position: (98950000, 88987500)
+DEBUG: board_modifier.py:132: Getting MX20 footprint position: (123825000, 80962500)
+DEBUG: board_modifier.py:119: Setting D20 footprint position: (118000000, 88987500)
+DEBUG: board_modifier.py:132: Getting MX21 footprint position: (142875000, 80962500)
+DEBUG: board_modifier.py:119: Setting D21 footprint position: (137050000, 88987500)
+DEBUG: board_modifier.py:132: Getting MX22 footprint position: (161925000, 80962500)
+DEBUG: board_modifier.py:119: Setting D22 footprint position: (156100000, 88987500)
+DEBUG: board_modifier.py:132: Getting MX23 footprint position: (45243750, 100012500)
+DEBUG: board_modifier.py:119: Setting D23 footprint position: (39418750, 108037500)
+DEBUG: board_modifier.py:132: Getting MX24 footprint position: (71437500, 100012500)
+DEBUG: board_modifier.py:119: Setting D24 footprint position: (65612500, 108037500)
+DEBUG: board_modifier.py:132: Getting MX25 footprint position: (90487500, 100012500)
+DEBUG: board_modifier.py:119: Setting D25 footprint position: (84662500, 108037500)
+DEBUG: board_modifier.py:132: Getting MX26 footprint position: (109537500, 100012500)
+DEBUG: board_modifier.py:119: Setting D26 footprint position: (103712500, 108037500)
+DEBUG: board_modifier.py:132: Getting MX27 footprint position: (128587500, 100012500)
+DEBUG: board_modifier.py:119: Setting D27 footprint position: (122762500, 108037500)
+DEBUG: board_modifier.py:132: Getting MX28 footprint position: (147637500, 100012500)
+DEBUG: board_modifier.py:119: Setting D28 footprint position: (141812500, 108037500)
+DEBUG: board_modifier.py:132: Getting MX29 footprint position: (166687500, 100012500)
+DEBUG: board_modifier.py:119: Setting D29 footprint position: (160862500, 108037500)
+DEBUG: board_modifier.py:132: Getting MX30 footprint position: (50006250, 119062500)
+DEBUG: board_modifier.py:119: Setting D30 footprint position: (44181250, 127087500)
+DEBUG: board_modifier.py:132: Getting MX31 footprint position: (80962500, 119062500)
+DEBUG: board_modifier.py:119: Setting D31 footprint position: (75137500, 127087500)
+DEBUG: board_modifier.py:132: Getting MX32 footprint position: (100012500, 119062500)
+DEBUG: board_modifier.py:119: Setting D32 footprint position: (94187500, 127087500)
+DEBUG: board_modifier.py:132: Getting MX33 footprint position: (119062500, 119062500)
+DEBUG: board_modifier.py:119: Setting D33 footprint position: (113237500, 127087500)
+DEBUG: board_modifier.py:132: Getting MX34 footprint position: (138112500, 119062500)
+DEBUG: board_modifier.py:119: Setting D34 footprint position: (132287500, 127087500)
+DEBUG: board_modifier.py:132: Getting MX35 footprint position: (157162500, 119062500)
+DEBUG: board_modifier.py:119: Setting D35 footprint position: (151337500, 127087500)
+DEBUG: board_modifier.py:132: Getting MX36 footprint position: (40481250, 138112500)
+DEBUG: board_modifier.py:119: Setting D36 footprint position: (34656250, 146137500)
+DEBUG: board_modifier.py:132: Getting MX37 footprint position: (61912500, 138112500)
+DEBUG: board_modifier.py:119: Setting D37 footprint position: (56087500, 146137500)
+DEBUG: board_modifier.py:132: Getting MX38 footprint position: (83343750, 138112500)
+DEBUG: board_modifier.py:119: Setting D38 footprint position: (77518750, 146137500)
+DEBUG: board_modifier.py:132: Getting MX39 footprint position: (135731250, 147637500)
+DEBUG: board_modifier.py:119: Setting D39 footprint position: (129906250, 155662500)
+DEBUG: board_modifier.py:132: Getting MX40 footprint position: (166687500, 147637500)
+DEBUG: board_modifier.py:119: Setting D40 footprint position: (160862500, 155662500)
+DEBUG: key_placer.py:928: Placing additional elements for MX18
+DEBUG: board_modifier.py:132: Getting MX18 footprint position: (85725000, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional LED18 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED18 footprint position: (85725000, 75962500)
+DEBUG: board_modifier.py:84: Searching for optional C18 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C18 footprint position: (89225000, 78237500)
+DEBUG: key_placer.py:928: Placing additional elements for MX32
+DEBUG: board_modifier.py:132: Getting MX32 footprint position: (100012500, 119062500)
+DEBUG: board_modifier.py:84: Searching for optional LED32 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED32 footprint position: (100012500, 114062500)
+DEBUG: board_modifier.py:84: Searching for optional C32 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C32 footprint position: (103512500, 116337500)
+DEBUG: key_placer.py:928: Placing additional elements for MX1
+DEBUG: board_modifier.py:132: Getting MX1 footprint position: (38100000, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED1 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED1 footprint position: (38100000, 33100000)
+DEBUG: board_modifier.py:84: Searching for optional C1 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C1 footprint position: (41600000, 35375000)
+DEBUG: key_placer.py:928: Placing additional elements for MX15
+DEBUG: board_modifier.py:132: Getting MX15 footprint position: (171450000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional LED15 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED15 footprint position: (171450000, 56912500)
+DEBUG: board_modifier.py:84: Searching for optional C15 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C15 footprint position: (174950000, 59187500)
+DEBUG: key_placer.py:928: Placing additional elements for MX4
+DEBUG: board_modifier.py:132: Getting MX4 footprint position: (100012500, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED4 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED4 footprint position: (100012500, 33100000)
+DEBUG: board_modifier.py:84: Searching for optional C4 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C4 footprint position: (103512500, 35375000)
+DEBUG: key_placer.py:928: Placing additional elements for MX11
+DEBUG: board_modifier.py:132: Getting MX11 footprint position: (95250000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional LED11 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED11 footprint position: (95250000, 56912500)
+DEBUG: board_modifier.py:84: Searching for optional C11 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C11 footprint position: (98750000, 59187500)
+DEBUG: key_placer.py:928: Placing additional elements for MX13
+DEBUG: board_modifier.py:132: Getting MX13 footprint position: (133350000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional LED13 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED13 footprint position: (133350000, 56912500)
+DEBUG: board_modifier.py:84: Searching for optional C13 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C13 footprint position: (136850000, 59187500)
+DEBUG: key_placer.py:928: Placing additional elements for MX6
+DEBUG: board_modifier.py:132: Getting MX6 footprint position: (147637500, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED6 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED6 footprint position: (147637500, 33100000)
+DEBUG: board_modifier.py:84: Searching for optional C6 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C6 footprint position: (151137500, 35375000)
+DEBUG: key_placer.py:928: Placing additional elements for MX35
+DEBUG: board_modifier.py:132: Getting MX35 footprint position: (157162500, 119062500)
+DEBUG: board_modifier.py:84: Searching for optional LED35 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED35 footprint position: (157162500, 114062500)
+DEBUG: board_modifier.py:84: Searching for optional C35 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C35 footprint position: (160662500, 116337500)
+DEBUG: key_placer.py:928: Placing additional elements for MX31
+DEBUG: board_modifier.py:132: Getting MX31 footprint position: (80962500, 119062500)
+DEBUG: board_modifier.py:84: Searching for optional LED31 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED31 footprint position: (80962500, 114062500)
+DEBUG: board_modifier.py:84: Searching for optional C31 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C31 footprint position: (84462500, 116337500)
+DEBUG: key_placer.py:928: Placing additional elements for MX3
+DEBUG: board_modifier.py:132: Getting MX3 footprint position: (80962500, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED3 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED3 footprint position: (80962500, 33100000)
+DEBUG: board_modifier.py:84: Searching for optional C3 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C3 footprint position: (84462500, 35375000)
+DEBUG: key_placer.py:928: Placing additional elements for MX30
+DEBUG: board_modifier.py:132: Getting MX30 footprint position: (50006250, 119062500)
+DEBUG: board_modifier.py:84: Searching for optional LED30 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED30 footprint position: (50006250, 114062500)
+DEBUG: board_modifier.py:84: Searching for optional C30 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C30 footprint position: (53506250, 116337500)
+DEBUG: key_placer.py:928: Placing additional elements for MX20
+DEBUG: board_modifier.py:132: Getting MX20 footprint position: (123825000, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional LED20 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED20 footprint position: (123825000, 75962500)
+DEBUG: board_modifier.py:84: Searching for optional C20 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C20 footprint position: (127325000, 78237500)
+DEBUG: key_placer.py:928: Placing additional elements for MX38
+DEBUG: board_modifier.py:132: Getting MX38 footprint position: (83343750, 138112500)
+DEBUG: board_modifier.py:84: Searching for optional LED38 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED38 footprint position: (83343750, 133112500)
+DEBUG: board_modifier.py:84: Searching for optional C38 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C38 footprint position: (86843750, 135387500)
+DEBUG: key_placer.py:928: Placing additional elements for MX2
+DEBUG: board_modifier.py:132: Getting MX2 footprint position: (61912500, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED2 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED2 footprint position: (61912500, 33100000)
+DEBUG: board_modifier.py:84: Searching for optional C2 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C2 footprint position: (65412500, 35375000)
+DEBUG: key_placer.py:928: Placing additional elements for MX17
+DEBUG: board_modifier.py:132: Getting MX17 footprint position: (66675000, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional LED17 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED17 footprint position: (66675000, 75962500)
+DEBUG: board_modifier.py:84: Searching for optional C17 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C17 footprint position: (70175000, 78237500)
+DEBUG: key_placer.py:928: Placing additional elements for MX27
+DEBUG: board_modifier.py:132: Getting MX27 footprint position: (128587500, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional LED27 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED27 footprint position: (128587500, 95012500)
+DEBUG: board_modifier.py:84: Searching for optional C27 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C27 footprint position: (132087500, 97287500)
+DEBUG: key_placer.py:928: Placing additional elements for MX26
+DEBUG: board_modifier.py:132: Getting MX26 footprint position: (109537500, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional LED26 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED26 footprint position: (109537500, 95012500)
+DEBUG: board_modifier.py:84: Searching for optional C26 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C26 footprint position: (113037500, 97287500)
+DEBUG: key_placer.py:928: Placing additional elements for MX33
+DEBUG: board_modifier.py:132: Getting MX33 footprint position: (119062500, 119062500)
+DEBUG: board_modifier.py:84: Searching for optional LED33 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED33 footprint position: (119062500, 114062500)
+DEBUG: board_modifier.py:84: Searching for optional C33 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C33 footprint position: (122562500, 116337500)
+DEBUG: key_placer.py:928: Placing additional elements for MX37
+DEBUG: board_modifier.py:132: Getting MX37 footprint position: (61912500, 138112500)
+DEBUG: board_modifier.py:84: Searching for optional LED37 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED37 footprint position: (61912500, 133112500)
+DEBUG: board_modifier.py:84: Searching for optional C37 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C37 footprint position: (65412500, 135387500)
+DEBUG: key_placer.py:928: Placing additional elements for MX36
+DEBUG: board_modifier.py:132: Getting MX36 footprint position: (40481250, 138112500)
+DEBUG: board_modifier.py:84: Searching for optional LED36 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED36 footprint position: (40481250, 133112500)
+DEBUG: board_modifier.py:84: Searching for optional C36 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C36 footprint position: (43981250, 135387500)
+DEBUG: key_placer.py:928: Placing additional elements for MX8
+DEBUG: board_modifier.py:132: Getting MX8 footprint position: (38100000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional LED8 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED8 footprint position: (38100000, 56912500)
+DEBUG: board_modifier.py:84: Searching for optional C8 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C8 footprint position: (41600000, 59187500)
+DEBUG: key_placer.py:928: Placing additional elements for MX12
+DEBUG: board_modifier.py:132: Getting MX12 footprint position: (114300000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional LED12 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED12 footprint position: (114300000, 56912500)
+DEBUG: board_modifier.py:84: Searching for optional C12 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C12 footprint position: (117800000, 59187500)
+DEBUG: key_placer.py:928: Placing additional elements for MX25
+DEBUG: board_modifier.py:132: Getting MX25 footprint position: (90487500, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional LED25 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED25 footprint position: (90487500, 95012500)
+DEBUG: board_modifier.py:84: Searching for optional C25 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C25 footprint position: (93987500, 97287500)
+DEBUG: key_placer.py:928: Placing additional elements for MX29
+DEBUG: board_modifier.py:132: Getting MX29 footprint position: (166687500, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional LED29 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED29 footprint position: (166687500, 95012500)
+DEBUG: board_modifier.py:84: Searching for optional C29 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C29 footprint position: (170187500, 97287500)
+DEBUG: key_placer.py:928: Placing additional elements for MX39
+DEBUG: board_modifier.py:132: Getting MX39 footprint position: (135731250, 147637500)
+DEBUG: board_modifier.py:84: Searching for optional LED39 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED39 footprint position: (135731250, 142637500)
+DEBUG: board_modifier.py:84: Searching for optional C39 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C39 footprint position: (139231250, 144912500)
+DEBUG: key_placer.py:928: Placing additional elements for MX22
+DEBUG: board_modifier.py:132: Getting MX22 footprint position: (161925000, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional LED22 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED22 footprint position: (161925000, 75962500)
+DEBUG: board_modifier.py:84: Searching for optional C22 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C22 footprint position: (165425000, 78237500)
+DEBUG: key_placer.py:928: Placing additional elements for MX21
+DEBUG: board_modifier.py:132: Getting MX21 footprint position: (142875000, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional LED21 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED21 footprint position: (142875000, 75962500)
+DEBUG: board_modifier.py:84: Searching for optional C21 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C21 footprint position: (146375000, 78237500)
+DEBUG: key_placer.py:928: Placing additional elements for MX16
+DEBUG: board_modifier.py:132: Getting MX16 footprint position: (42862500, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional LED16 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED16 footprint position: (42862500, 75962500)
+DEBUG: board_modifier.py:84: Searching for optional C16 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C16 footprint position: (46362500, 78237500)
+DEBUG: key_placer.py:928: Placing additional elements for MX7
+DEBUG: board_modifier.py:132: Getting MX7 footprint position: (166687500, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED7 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED7 footprint position: (166687500, 33100000)
+DEBUG: board_modifier.py:84: Searching for optional C7 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C7 footprint position: (170187500, 35375000)
+DEBUG: key_placer.py:928: Placing additional elements for MX40
+DEBUG: board_modifier.py:132: Getting MX40 footprint position: (166687500, 147637500)
+DEBUG: board_modifier.py:84: Searching for optional LED40 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED40 footprint position: (166687500, 142637500)
+DEBUG: board_modifier.py:84: Searching for optional C40 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C40 footprint position: (170187500, 144912500)
+DEBUG: key_placer.py:928: Placing additional elements for MX19
+DEBUG: board_modifier.py:132: Getting MX19 footprint position: (104775000, 80962500)
+DEBUG: board_modifier.py:84: Searching for optional LED19 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED19 footprint position: (104775000, 75962500)
+DEBUG: board_modifier.py:84: Searching for optional C19 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C19 footprint position: (108275000, 78237500)
+DEBUG: key_placer.py:928: Placing additional elements for MX14
+DEBUG: board_modifier.py:132: Getting MX14 footprint position: (152400000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional LED14 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED14 footprint position: (152400000, 56912500)
+DEBUG: board_modifier.py:84: Searching for optional C14 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C14 footprint position: (155900000, 59187500)
+DEBUG: key_placer.py:928: Placing additional elements for MX34
+DEBUG: board_modifier.py:132: Getting MX34 footprint position: (138112500, 119062500)
+DEBUG: board_modifier.py:84: Searching for optional LED34 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED34 footprint position: (138112500, 114062500)
+DEBUG: board_modifier.py:84: Searching for optional C34 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C34 footprint position: (141612500, 116337500)
+DEBUG: key_placer.py:928: Placing additional elements for MX9
+DEBUG: board_modifier.py:132: Getting MX9 footprint position: (57150000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional LED9 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED9 footprint position: (57150000, 56912500)
+DEBUG: board_modifier.py:84: Searching for optional C9 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C9 footprint position: (60650000, 59187500)
+DEBUG: key_placer.py:928: Placing additional elements for MX10
+DEBUG: board_modifier.py:132: Getting MX10 footprint position: (76200000, 61912500)
+DEBUG: board_modifier.py:84: Searching for optional LED10 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED10 footprint position: (76200000, 56912500)
+DEBUG: board_modifier.py:84: Searching for optional C10 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C10 footprint position: (79700000, 59187500)
+DEBUG: key_placer.py:928: Placing additional elements for MX5
+DEBUG: board_modifier.py:132: Getting MX5 footprint position: (119062500, 38100000)
+DEBUG: board_modifier.py:84: Searching for optional LED5 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED5 footprint position: (119062500, 33100000)
+DEBUG: board_modifier.py:84: Searching for optional C5 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C5 footprint position: (122562500, 35375000)
+DEBUG: key_placer.py:928: Placing additional elements for MX28
+DEBUG: board_modifier.py:132: Getting MX28 footprint position: (147637500, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional LED28 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED28 footprint position: (147637500, 95012500)
+DEBUG: board_modifier.py:84: Searching for optional C28 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C28 footprint position: (151137500, 97287500)
+DEBUG: key_placer.py:928: Placing additional elements for MX23
+DEBUG: board_modifier.py:132: Getting MX23 footprint position: (45243750, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional LED23 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED23 footprint position: (45243750, 95012500)
+DEBUG: board_modifier.py:84: Searching for optional C23 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C23 footprint position: (48743750, 97287500)
+DEBUG: key_placer.py:928: Placing additional elements for MX24
+DEBUG: board_modifier.py:132: Getting MX24 footprint position: (71437500, 100012500)
+DEBUG: board_modifier.py:84: Searching for optional LED24 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting LED24 footprint position: (71437500, 95012500)
+DEBUG: board_modifier.py:84: Searching for optional C24 footprint in J:/Keyboard/1.Tomak97/0.Left/0.Left.kicad_pcb
+DEBUG: board_modifier.py:119: Setting C24 footprint position: (74937500, 97287500)

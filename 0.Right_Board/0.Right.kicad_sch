@@ -1,0 +1,152 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "58613989-0c9c-4c67-a1d0-a68828ce4243")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 31.75 77.47)
+		(size 40.64 31.75)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "608ea79c-c406-42b3-a2d4-a78c1a736059")
+		(property "Sheetname" "Right_Switch"
+			(at 31.75 76.7584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Right_Switch.kicad_sch"
+			(at 31.75 109.8046 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "0.Right"
+				(path "/58613989-0c9c-4c67-a1d0-a68828ce4243"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 31.75 125.73)
+		(size 41.91 30.48)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "8674c4ce-777c-4449-900d-c47af14e2d8e")
+		(property "Sheetname" "Right_Main"
+			(at 31.75 125.0184 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Right_Main.kicad_sch"
+			(at 31.75 156.7946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "0.Right"
+				(path "/58613989-0c9c-4c67-a1d0-a68828ce4243"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 31.75 30.48)
+		(size 40.64 34.29)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f413ee88-b1ae-43c4-80ec-491b8bf512fc")
+		(property "Sheetname" "Right_LED"
+			(at 31.75 29.7684 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "Right_LED.kicad_sch"
+			(at 31.75 65.3546 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "0.Right"
+				(path "/58613989-0c9c-4c67-a1d0-a68828ce4243"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
